@@ -23,29 +23,19 @@ const ALeBirthdayMagic = () => {
     photo3: "/images/ale/photo3.jpg"
   };
 
-  // Détecter si c'est un mobile
-  const [isMobile, setIsMobile] = useState(false);
-
+  // Récupérer les dimensions
   useEffect(() => {
     const handleResize = () => {
       setDimensions({
         width: window.innerWidth,
         height: window.innerHeight
       });
-      setIsMobile(window.innerWidth < 768);
     };
     
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  // Gestionnaire de clic pour les souhaits sur mobile
-  const handleWishClick = (index) => {
-    if (isMobile) {
-      setActiveWish(activeWish === index ? null : index);
-    }
-  };
 
   // Souvenirs personnalisés
   const memories = [
@@ -611,14 +601,16 @@ const ALeBirthdayMagic = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1 }}
-                whileHover={!isMobile ? { y: -10 } : {}}
-                onClick={() => handleWishClick(index)}
+                whileHover={{ y: -10 }}
+                onHoverStart={() => setActiveWish(index)}
+                onHoverEnd={() => setActiveWish(null)}
+                onClick={() => setActiveWish(activeWish === index ? null : index)}
                 className="relative group cursor-pointer"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${wish.color} rounded-2xl blur-xl opacity-0 ${!isMobile ? 'group-hover:opacity-30' : activeWish === index ? 'opacity-30' : ''} transition-opacity duration-500`} />
+                <div className={`absolute inset-0 bg-gradient-to-br ${wish.color} rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500`} />
                 
                 <div className={`relative ${wish.bgColor} p-8 rounded-2xl shadow-xl border border-white/50 backdrop-blur-sm h-full`}>
-                  <div className={`${wish.iconColor} mb-4 transform transition-transform duration-300 ${!isMobile ? 'group-hover:scale-110' : activeWish === index ? 'scale-110' : ''}`}>
+                  <div className={`${wish.iconColor} mb-4 transform group-hover:scale-110 transition-transform duration-300`}>
                     <div className="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
                       <Icon className="w-8 h-8" />
                     </div>
@@ -638,12 +630,12 @@ const ALeBirthdayMagic = () => {
                       </motion.p>
                     ) : (
                       <p className="text-gray-400 italic">
-                        {isMobile ? "👆 Clique pour lire" : "🖱️ Passe la souris pour lire"}
+                        👆 Clique ou passe la souris pour lire
                       </p>
                     )}
                   </AnimatePresence>
 
-                  <div className="absolute bottom-4 right-4 opacity-10 transition-opacity duration-300 group-hover:opacity-30">
+                  <div className="absolute bottom-4 right-4 opacity-10 group-hover:opacity-30 transition-opacity">
                     <Icons.Heart size={40} className="text-gray-600" />
                   </div>
                 </div>
