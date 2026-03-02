@@ -225,7 +225,7 @@ const ALeBirthdayMagic = () => {
               transition={{ delay: 0.3 }}
               className="text-6xl md:text-9xl font-bold mb-8"
             >
-              {'ALe'.split('').map((letter, index) => (
+              {'ALE'.split('').map((letter, index) => (
                 <motion.span
                   key={index}
                   animate={{ 
