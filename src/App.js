@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Joyeux Anniversaire ALE ✨</title>
+        <title>ALE ✨</title>
         <meta name="description" content="Une surprise magique pour l'anniversaire d'ALE" />
         <meta property="og:title" content="Joyeux Anniversaire ALE ✨" />
         <meta property="og:description" content="Une création spéciale pour toi" />
