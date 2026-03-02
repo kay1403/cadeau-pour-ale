@@ -815,7 +815,7 @@ const ALeBirthdayMagic = () => {
             transition={{ delay: 0.8 }}
             className="text-2xl text-gray-600 mt-8"
           >
-            ALE · 3 mars 2004 · Port-Gentil, jour où Dieu a créé une Reine pour ✨✨
+             ✨✨ ✨✨ALE · 3 mars 2004 · Port-Gentil, jour où Dieu a créé une Reine ✨✨ ✨✨
           </motion.p>
         </motion.div>
       </section>
