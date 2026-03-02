@@ -43,7 +43,7 @@ const ALeBirthdayMagic = () => {
     { 
       year: "Nos années d'enfance", 
       title: "Les bancs de l'école",
-      desc: "Les mêmes classes au Gabon, les mêmes rires, les mêmes rêves d'enfants... Cette amitié qui a commencé sur les bancs de l'école et qui n'a jamais vraiment cessé, malgré les kilomètres.",
+      desc: "Les mêmes classes au Gabon, les mêmes rires... Cette amitié qui a commencé sur les bancs de l'école et qui n'a jamais vraiment cessé, malgré les kilomètres.",
       color: "from-blue-300 to-indigo-300",
       image: "📚",
       icon: Icons.BookOpen
@@ -51,7 +51,7 @@ const ALeBirthdayMagic = () => {
     { 
       year: "Des chemins différents", 
       title: "Toujours dans mon cœur",
-      desc: "Les quartiers différents, les villes différentes, les pays différents... Du Gabon au Rwanda, de la France au Gabon, nos conversations ont traversé les frontières. Jamais vraiment éloignés l'un de l'autre.",
+      desc: "Les quartiers différents, les écoles différentes, les villes différentes, les pays différents... Du Gabon au Rwanda, de la France au Rwanda, nos conversations ont traversé les frontières. Jamais vraiment éloignés l'un de l'autre.",
       color: "from-purple-300 to-pink-300",
       image: "🛤️",
       icon: Icons.Compass
@@ -111,7 +111,7 @@ const ALeBirthdayMagic = () => {
     {
       icon: Icons.Heart,
       title: "L'AMOUR",
-      wish: "Je te souhaite de trouver une bonne personne, quelqu'un qui saura voir en toi la merveille que tu es. Après tous ces heartbreaks, tu mérites un amour vrai, sincère, à la hauteur de ton grand cœur. Quelqu'un qui te comprendra, te soutiendra, et t'aimera comme tu mérites d'être aimée.",
+      wish: "Je te souhaite de trouver une bonne personne, quelqu'un qui saura voir en toi la merveille que tu es. Après tous ces petits heartbreaks que tu considères grands, tu mérites un amour vrai, sincère, à la hauteur de ton grand cœur. Quelqu'un qui te comprendra, te soutiendra, et t'aimera comme tu mérites d'être aimée.",
       color: "from-pink-500 to-rose-500",
       bgColor: "bg-pink-50",
       iconColor: "text-pink-600"
@@ -279,7 +279,7 @@ const ALeBirthdayMagic = () => {
         <div className="absolute inset-0">
           <img
             src={photos.photo1}
-            alt="ALe"
+            alt="ALE"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
@@ -342,8 +342,7 @@ const ALeBirthdayMagic = () => {
             transition={{ delay: 0.8 }}
             className="text-3xl md:text-6xl font-light"
           >
-            <span className="text-pink-200">Ma chère </span>
-            <span className="text-yellow-200 font-bold">ALe</span>
+            <span className="text-yellow-200 font-bold">ALE</span>
           </motion.div>
           
           <motion.p
@@ -352,7 +351,7 @@ const ALeBirthdayMagic = () => {
             transition={{ delay: 1.2 }}
             className="text-white/80 mt-8 max-w-2xl mx-auto text-lg"
           >
-            Du Gabon au Rwanda, de l'enfance à aujourd'hui, 
+            Du Rwanda à la France, de l'enfance à aujourd'hui, 
             une amitié qui traverse le temps et les kilomètres
           </motion.p>
         </div>
@@ -426,7 +425,7 @@ const ALeBirthdayMagic = () => {
               transition={{ delay: 0.3 }}
               className="absolute bottom-4 left-4 text-white text-lg font-light bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full"
             >
-              ✨ Souvenir précieux
+              ✨ L'universitaire
             </motion.div>
           </motion.div>
 
@@ -654,7 +653,7 @@ const ALeBirthdayMagic = () => {
           <p className="text-2xl text-gray-700 leading-relaxed">
             <span className="text-4xl block mb-4">💝</span>
             Que cette nouvelle année t'apporte tout cela et bien plus encore. 
-            Tu mérites tout le bonheur du monde, ma chère ALe.
+            Tu mérites tout le bonheur du monde, ALE.
           </p>
         </motion.div>
       </section>
@@ -734,11 +733,11 @@ const ALeBirthdayMagic = () => {
                 className="bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 p-8 md:p-12 rounded-3xl shadow-2xl"
               >
                 <p className="text-xl md:text-2xl text-white leading-relaxed">
-                  Ma chère ALe,<br/><br/>
+                  Ma chère ALE,<br/><br/>
 
                   Il y a des amitiés qui traversent le temps sans prendre une ride. 
                   La nôtre est de celles-là. Des bancs de l'école au Gabon à nos conversations 
-                  entre le Rwanda et la France, tu as toujours été cette présence unique dans ma vie.<br/><br/>
+                  entre le Rwanda, le Gabon et la France, tu as toujours été cette présence unique dans ma vie.<br/><br/>
 
                   On s'est tout dit - nos joies d'enfants, nos peines d'adolescents, 
                   et aujourd'hui nos cœurs brisés d'adultes. Dans les moments difficiles, 
@@ -763,7 +762,7 @@ const ALeBirthdayMagic = () => {
 
                   Avec toute mon affection, pour toujours.<br/><br/>
 
-                  <span className="text-3xl font-bold">Ton ami d'enfance</span>
+                  <span className="text-3xl font-bold">Ton ami</span>
                 </p>
               </motion.div>
             )}
@@ -775,7 +774,7 @@ const ALeBirthdayMagic = () => {
             transition={{ delay: 0.5 }}
             className="text-center text-gray-500 mt-12 text-lg"
           >
-            Du Gabon au Rwanda, avec tout mon cœur 💖
+            Du Rwanda à la France, avec tout mon cœur 💖
           </motion.p>
         </motion.div>
       </section>
@@ -816,7 +815,7 @@ const ALeBirthdayMagic = () => {
             transition={{ delay: 0.8 }}
             className="text-2xl text-gray-600 mt-8"
           >
-            ALe · 3 mars 2004 · Port-Gentil ✨
+            ALE · 3 mars 2004 · Port-Gentil, jour où Dieu a créé une Reine pour ✨✨
           </motion.p>
         </motion.div>
       </section>

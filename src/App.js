@@ -11,7 +11,7 @@ const LoadingScreen = () => (
     <div className="text-center">
       <Heart className="w-20 h-20 text-pink-400 mx-auto mb-4 animate-pulse" fill="currentColor" />
       <h2 className="text-3xl font-bold text-white">Chargement de la magie...</h2>
-      <p className="text-pink-200 mt-2">Pour ALe ✨</p>
+      <p className="text-pink-200 mt-2">Pour ALE ✨</p>
     </div>
   </div>
 );
@@ -20,9 +20,9 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Joyeux Anniversaire ALe ✨</title>
-        <meta name="description" content="Une surprise magique pour l'anniversaire d'ALe" />
-        <meta property="og:title" content="Joyeux Anniversaire ALe ✨" />
+        <title>Joyeux Anniversaire ALE ✨</title>
+        <meta name="description" content="Une surprise magique pour l'anniversaire d'ALE" />
+        <meta property="og:title" content="Joyeux Anniversaire ALE ✨" />
         <meta property="og:description" content="Une création spéciale pour toi" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
